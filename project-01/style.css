@@ -6,7 +6,6 @@
 body {
   font-family: 'Muli', sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -22,11 +21,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
-  border-radius: 50px;
-  color: #fff;
+  border-radius: 5rem;
   cursor: pointer;
-  margin: 10px;
   flex: 0.5;
+  margin: 1rem;
   position: relative;
   transition: flex 0.7s ease-in;
 }
@@ -34,9 +32,10 @@ body {
 .panel h3 {
   font-size: 2.4rem;
   position: absolute;
-  bottom: 2px;
-  left: 20px;
+  bottom: 2rem;
+  left: 2rem;
   margin: 0;
+  color: aliceblue;
   opacity: 0;
 }
 .panel.active {
@@ -44,15 +43,15 @@ body {
 }
 .panel.active h3 {
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+  transition: opacity 0.3 ease-in 0.4s;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 36rem) {
   .container {
-    width: 100vw;
+    width: 100vh;
   }
   .panel:nth-of-type(4),
-  .panel:nth-last-of-type(5) {
+  .panel:nth-of-type(5) {
     display: none;
   }
 }

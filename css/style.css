@@ -10,10 +10,10 @@ h3 {
   color: rgb(136, 136, 136);
   margin-bottom: 0.4rem;
 }
-.container {
+.menu {
   display: flex;
   max-width: 90rem;
-  margin: 5rem auto;
+  margin: 4rem auto;
   justify-content: center;
 }
 .thumbnail {
@@ -43,16 +43,21 @@ h3 {
   align-items: center;
   gap: 0.8rem;
   box-shadow: 2px 2px gold, -1rem 0 0.4rem grey;
+  text-transform: uppercase;
 }
+/* display: none; */
+/* visibility: hidden; */
 .card-disable {
   background-color: rgb(178, 178, 178);
+  text-transform: lowercase;
+  font-size: 8px;
 }
 .card-disable h3,
 .card-disable p {
   background-color: rgb(178, 178, 178);
   color: rgb(123, 123, 123);
 }
-a {
+.btn {
   display: inline-block;
   color: #fff;
   font-weight: 700;
@@ -62,8 +67,8 @@ a {
   text-decoration: none;
   letter-spacing: 1px;
 }
-a:hover {
-  background: #ddd;
+.btn:hover {
+  background: gold;
   color: #000;
 }
 
