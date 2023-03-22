@@ -16,7 +16,7 @@ body {
   transition: transform 0.5s linear;
   width: 100vw;
   min-height: 100vh;
-  padding: 5rem;
+  padding: 50px;
 }
 .container.show-nav {
   transform: rotate(-20deg);
@@ -39,15 +39,16 @@ body {
   transition: transform 0.5s linear;
 }
 .container.show-nav .circle {
-  transform: rotate(-70deg);
+  transform: rotate(-80deg);
 }
 .circle button {
-  cursor: pointer;
   position: absolute;
+  cursor: pointer;
   top: 50%;
   left: 50%;
   height: 100px;
   background: transparent;
+  border: none;
   font-size: 26px;
   color: #fff;
 }
@@ -57,7 +58,6 @@ body {
 .circle button#open {
   left: 60%;
 }
-
 .circle button#close {
   top: 60%;
   transform: rotate(90deg);
@@ -93,6 +93,9 @@ nav ul li + li + li {
   margin-left: 30px;
   transform: translateX(-200%);
 }
+.content img {
+  max-width: 100%;
+}
 .content {
   max-width: 1000px;
   margin: 50px auto;
@@ -107,7 +110,4 @@ nav ul li + li + li {
 .content p {
   color: #333;
   line-height: 1.5;
-}
-.content img {
-  max-width: 20%;
 }
